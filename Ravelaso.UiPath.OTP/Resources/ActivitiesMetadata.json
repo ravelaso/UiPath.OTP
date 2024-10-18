@@ -2,10 +2,10 @@
   "resourceManagerName": "Ravelaso.UiPath.OTP.Resources.Resources",
   "activities": [
     {
-      "fullName": "Ravelaso.UiPath.OTP.GenerateOTP",
+      "fullName": "Ravelaso.UiPath.OTP.GenerateTOTP",
       "shortName": "Generate OTP",
-      "displayNameKey": "Generate_OTP",
-      "descriptionKey": "Use to Generate OTP tokens",
+      "displayNameKey": "Generate_TOTP",
+      "descriptionKey": "Use to Generate TOTP from token",
       "categoryKey": "Templates",
       "viewModelType": "Ravelaso.UiPath.OTP.ViewModels.ActivityTemplateViewModel"
     }

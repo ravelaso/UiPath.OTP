@@ -31,7 +31,7 @@ namespace Ravelaso.UiPath.OTP.Tests.Workflow
             // Output the generated TOTP for manual verification
             Console.WriteLine($"Generated TOTP: {totpCode}");
         }
-
+        
         private string GenerateRandomBase32Secret(int length = 16)
         {
             var secret = KeyGeneration.GenerateRandomKey(32); // 32 bytes = 256 bits
