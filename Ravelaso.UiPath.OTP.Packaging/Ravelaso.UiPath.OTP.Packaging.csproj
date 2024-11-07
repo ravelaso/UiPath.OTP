@@ -11,7 +11,7 @@
         <VersionBuild>$([System.DateTime]::UtcNow.DayOfYear.ToString("F0"))</VersionBuild>
         <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("F0"))</VersionRevision>
         <PackageId>Ravelaso.UiPath.OTP</PackageId>
-        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.2</VersionPrefix>
+        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.4</VersionPrefix>
         <VersionPrefix Condition="'$(Configuration)' == 'Debug'">1.0.$(VersionBuild)-dev.$(VersionRevision)</VersionPrefix>
         <Authors>Ravelaso</Authors>
         <PackageTags>UiPathActivities</PackageTags>
@@ -45,7 +45,7 @@
         </ItemGroup>
         <Delete Files="@(PackageFilesToDelete)" ContinueOnError="WarnAndContinue"/>
     </Target>
-
+    
     <ItemGroup>
         <ProjectReference Include="..\Ravelaso.UiPath.OTP\Ravelaso.UiPath.OTP.csproj">
             <PrivateAssets>All</PrivateAssets>
@@ -54,6 +54,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Otp.NET" Version="1.4.0" />
+        <PackageReference Include="Otp.NET" Version="1.4.0"/>
     </ItemGroup>
 </Project>
