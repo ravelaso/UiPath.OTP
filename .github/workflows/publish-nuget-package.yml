@@ -31,8 +31,5 @@ jobs:
       - name: Build project
         run: dotnet build --configuration Release
 
-      - name: Pack project
-        run: dotnet pack --configuration Release --output Output
-
       - name: Publish package
-        run: dotnet nuget push Output/*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
+        run: dotnet nuget push Output/Activities/Packages/*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}

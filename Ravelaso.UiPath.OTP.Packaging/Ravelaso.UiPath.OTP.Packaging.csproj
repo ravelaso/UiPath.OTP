@@ -12,9 +12,9 @@
         <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("F0"))</VersionRevision>
         <PackageId>Ravelaso.UiPath.OTP</PackageId>
         
-        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.6</VersionPrefix>
+        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.7</VersionPrefix>
         <VersionPrefix Condition="'$(Configuration)' == 'Debug'">1.0.$(VersionBuild)-dev.$(VersionRevision)</VersionPrefix>
-        <PackageReleaseNotes>Corrected description</PackageReleaseNotes>
+        <PackageReleaseNotes>Corrected description, fixed deployment.</PackageReleaseNotes>
 
         <Authors>Ravelaso</Authors>
         <Description>
