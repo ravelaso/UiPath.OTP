@@ -12,13 +12,15 @@
         <VersionRevision>$([System.DateTime]::UtcNow.TimeOfDay.TotalMinutes.ToString("F0"))</VersionRevision>
         <PackageId>Ravelaso.UiPath.OTP</PackageId>
         
-        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.7</VersionPrefix>
+        <VersionPrefix Condition="'$(Configuration)' == 'Release'">1.0.8</VersionPrefix>
         <VersionPrefix Condition="'$(Configuration)' == 'Debug'">1.0.$(VersionBuild)-dev.$(VersionRevision)</VersionPrefix>
-        <PackageReleaseNotes>Corrected description, fixed deployment.</PackageReleaseNotes>
+        <PackageReleaseNotes>Minor fixes</PackageReleaseNotes>
 
         <Authors>Ravelaso</Authors>
+        <RepositoryUrl>https://github.com/ravelaso/UiPath.OTP</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
         <Description>
-            Simple UiPath Activity to genereate a TOTP code to use in 2FA.
+            Generates and returns a TOTP of 6 digits from an OTP Token passed to the activity.
         </Description>
         <PackageTags>UiPathActivities</PackageTags>
         <Product>Ravelaso.UiPath.OTP.Packaging</Product>
